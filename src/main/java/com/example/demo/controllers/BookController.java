@@ -1,6 +1,8 @@
 package com.example.demo.controllers;
 
 import com.example.demo.persistence.model.Book;
+import com.example.demo.persistence.model.BookIdMismatchException;
+import com.example.demo.persistence.model.BookNotFoundException;
 import com.example.demo.persistence.repo.BookRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
