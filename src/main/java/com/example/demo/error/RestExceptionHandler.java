@@ -1,5 +1,7 @@
-package com.example.demo.book;
+package com.example.demo.error;
 
+import com.example.demo.controller.book.BookIdMismatchException;
+import com.example.demo.controller.book.BookNotFoundException;
 import javax.validation.ConstraintViolationException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpHeaders;

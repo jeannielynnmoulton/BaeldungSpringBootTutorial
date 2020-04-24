@@ -1,4 +1,4 @@
-package com.example.demo.book;
+package com.example.demo.controller.book;
 
 public class BookIdMismatchException extends RuntimeException {
 
