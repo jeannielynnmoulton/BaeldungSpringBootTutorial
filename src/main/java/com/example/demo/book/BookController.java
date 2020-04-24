@@ -16,8 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/books")
 public class BookController {
-
-  @Autowired
+  
   private BookRepository bookRepository;
 
   @GetMapping
