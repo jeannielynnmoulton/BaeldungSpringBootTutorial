@@ -24,6 +24,12 @@ public class BookController {
   @Autowired
   private BookRepository bookRepository;
 
+  @GetMapping("/")
+  public String booksPage() {
+    // This will load the books.html page when you go to localhost:8081/api/books
+    return "books";
+  }
+
   @GetMapping
   public Iterable findAll() {
     return bookRepository.findAll();
