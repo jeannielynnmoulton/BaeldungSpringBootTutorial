@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class UserController {
 
+  @Autowired
+  private UserRepository userRepository;
+
   @GetMapping("/signup")
   public String showSignUpForm(User user) {
     return "add-user";
